@@ -8,28 +8,6 @@ lsp.ensure_installed({
 
 	-- Rust
 	'rust_analyzer',
-
-	--C and C++
-	'clangd',
-
-	-- Web stuff
-	-- HTML
-	'html',
-	-- CSS
-	'cssls',
-	-- JavaScript
-	'tsserver',
-	-- SQL
-	'sqlls',
-
-	-- Docker
-	'dockerls',
-
-	-- Lua
-	'lua_ls',
-
-	-- Markdown
-	'marksman',
 })
 
 -- Fix Undefined global 'vim'
