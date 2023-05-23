@@ -18,6 +18,16 @@ return require('packer').startup(function(use)
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
 
+    -- Colorschemes
+    -- catppuccin
+    use ({
+        "catppuccin/nvim",
+        as = "catppuccin",
+        config = function()
+            vim.cmd('colorscheme catppuccin')
+        end
+    })
+
 	-- Rode pine colorscheme
 	use({
 		'rose-pine/neovim',
@@ -45,6 +55,12 @@ return require('packer').startup(function(use)
 	-- 	keybind: space+gs
 	use('tpope/vim-fugitive')
 
+    -- Tmux controls
+    use('christoomey/vim-tmux-navigator')
+
+    -- NNN file usage
+    use('mcchrish/nnn.vim')
+
 	-- LSP
 	use {
 		'VonHeikemen/lsp-zero.nvim',
@@ -61,10 +77,6 @@ return require('packer').startup(function(use)
 			{'saadparwaiz1/cmp_luasnip'},
 			{'hrsh7th/cmp-nvim-lsp'},
 			{'hrsh7th/cmp-nvim-lua'},
-
-			-- Snippets
-			{'L3MON4D3/LuaSnip'},
-			{'rafamadriz/friendly-snippets'},
 		}
 	}
 
