@@ -61,6 +61,9 @@ return require('packer').startup(function(use)
     -- NNN file usage
     use('mcchrish/nnn.vim')
 
+    -- Lualine
+    use('nvim-lualine/lualine.nvim')
+
 	-- LSP
 	use {
 		'VonHeikemen/lsp-zero.nvim',
